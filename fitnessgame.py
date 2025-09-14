@@ -2,8 +2,6 @@ import random
 import datetime
 from workout import physicalworkout, mentalworkout, memorygame, slowprint
 
-
-
 slowprint ("---FIT IT!---\n")
 
 def repeat():
@@ -98,3 +96,4 @@ def repeat():
 
 repeat()
          
+
