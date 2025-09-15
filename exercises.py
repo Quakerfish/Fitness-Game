@@ -55,6 +55,24 @@ HardMen = [
     ("\nWho discovered penicillin?\nAnswer: ", "alexander fleming")
 ]
 
+EasyRiddle = [
+    ("What has hands but can’t clap?\nAnswer: ", "clock", "It tells time."),
+    ("What has to be broken before you can use it?\nAnswer: ", "egg", "Often used in cooking."),
+    ("What goes up but never comes down?\nAnswer: ", "age", "It increases every birthday.")
+]
+
+MedRiddle = [
+    ("I speak without a mouth and hear without ears. What am I?\nAnswer: ", "echo", "You hear it in valleys."),
+    ("The more you take, the more you leave behind. What are they?\nAnswer: ", "footsteps", "Think of hiking or walking."),
+    ("What can fill a room but takes up no space?\nAnswer: ", "light", "It helps you see.")
+]
+
+HardRiddle = [
+    ("I am the answer to this riddle. What am I?\nAnswer: ", "riddle", "You're solving one right now."),
+    ("I exist only when you think of me. I vanish when ignored. What am I?\nAnswer: ", "thought", "It’s in your mind."),
+    ("I am the mirror you avoid, the silence you fill, the question you fear. I am not the end, but I define your journey. What am I?\nAnswer: ", "purpose", "Think of why you wake up and what keeps you going.")
+]
+
 MemoryWord = [
     "R G B Y P",
     "L O V E S",
@@ -72,3 +90,10 @@ MemoryWord = [
     "S K I L L S",
     "C R E A T E"
 ]
+
+Scrambled = [
+    "exercise", "fitness", "stretch", "jumping", "running",
+    "balance", "pushup", "situp", "agility", "strength",
+    "basketball", "volleyball", "warmup", "endurance"
+]
+
