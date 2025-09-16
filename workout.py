@@ -139,7 +139,7 @@ def wordle():
             break
 
 def reactiontime():
-    print("⚠️ Press Enter to start the Reaction Time Test...")
+    print("⚠️  Press Enter to start the Reaction Time Test...")
     print("⏳ Get ready...")
     
     time.sleep(random.randint(2, 5))
@@ -150,6 +150,33 @@ def reactiontime():
     
     reactiontime = ending - starting
 
-    slowprint(f"⏱️ Your reaction time is {reactiontime:.3f} seconds!")
+    slowprint(f"⏱️  Your reaction time is {reactiontime:.3f} seconds!")
+
+def adventuregame():
+    slowprint("\n🏞️ ---ADVENTURE GAME--- 🏕️\n")
+    slowprint("You wake up in an abandoned classroom\nThere was no one around you and the room was dark")
+    slowprint ("You: Where am I? What is this place?")
+    while True:
+        print("--DECISION!---\n1️⃣  Look around the room\n2️⃣  Sit and wait")
+        choice = input("✍️ Your choice: ").strip().lower()
+    
+        if choice == '1' or choice == 'Look around the room':
+            slowprint("You explore the room and find the door")
+            break
+            
+            
+        elif choice == '2' or choice == 'Sit and wait':
+            slowprint("You sit and wait...\nA few minutes passed and nothing happend")
+
+    while True:
+        choice2 = input("--DECISION!---\n1️⃣  Open Door\n2️⃣  Explore\nChoice:")
+
+        if choice2 == '1' or choice2 == 'Open Door':
+            break
+        if choice2 == '2' or choice2 == 'Explore':
+            slowprint("You explore the Room and find nothing!\nYou return back to the door...")
+
+    slowprint ("You arrived in the Hallway!\nThe hallway was dark and the building look old with dust and vines coming out")
+                
 
     
