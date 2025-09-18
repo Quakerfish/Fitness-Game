@@ -153,6 +153,24 @@ def reactiontime():
     slowprint(f"⏱️  Your reaction time is {reactiontime:.3f} seconds!")
 
 def adventuregame():
+    def monsterencounter():
+        slowprint ("You hear something coming towards you...")
+        choice3 = input ("---DECISION!---\n1️⃣  Hide\n2️⃣  Wait")
+        while True:
+            if choice3 == '1' or choice3 == 'hide':
+                slowprint ("You narrowily hid and the monster went by...")
+            else:
+                slowprint ("The monster found you and chased you...\nThe monster eventually catched you and asked you a question...")
+                break
+           
+        gameselector = random.randint(1, 3)
+        match (gameselector):
+            case 1:
+                mentalworkout()
+            case 2:
+                wordle()
+            case 3:
+                riddlegame()
     slowprint("\n🏞️ ---ADVENTURE GAME--- 🏕️\n")
     slowprint("You wake up in an abandoned classroom\nThere was no one around you and the room was dark")
     slowprint ("You: Where am I? What is this place?")
@@ -177,6 +195,12 @@ def adventuregame():
             slowprint("You explore the Room and find nothing!\nYou return back to the door...")
 
     slowprint ("You arrived in the Hallway!\nThe hallway was dark and the building look old with dust and vines coming out")
-                
+    while True:
+        choice = input ("---DECISION!!!---\n1️⃣  Explore\n2️⃣  Wait\nChoice:").strip().lower()
+
+        if choice == '1' or choice == 'explore':
+            pass
+        elif choice == '2' or choice == 'wait':
+            monsterencounter()
 
     
